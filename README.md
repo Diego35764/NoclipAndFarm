@@ -1,10 +1,12 @@
-getgenv().FlySpeed = 260 getgenv().Team = "Prisoners" getgenv().TimeToLoad = 2
+-- Configurações do autorob
+getgenv().FlySpeed = 260
+getgenv().Team = "Prisoners"
+getgenv().TimeToLoad = 2
 
+-- Carrega o autorob a partir da URL
 loadstring(game:HttpGet("https://raw.githubusercontent.com/42069RATIOXD/mad-city-chapter-1-season-4-autorob/refs/heads/main/autorob"))()
 
-
--- Script de noclip automático para Mad City (Roblox)
-
+-- Script de noclip automático
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local noclipEnabled = true  -- Noclip ativado por padrão
